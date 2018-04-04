@@ -8,7 +8,8 @@ Pythonの動作テスト兼テンプレート
 
 def main():
     """main"""
-    print("Hello,world!")
+    print("Hello world!")
+    print("Good-bye cruel world!")
 
 
 if __name__ == '__main__':
