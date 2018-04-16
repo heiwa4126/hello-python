@@ -1,9 +1,10 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 #-*- coding: utf-8 -*-
 # pylint: disable-msg=C0103, C0111
 """
 Pythonの動作テスト兼テンプレート
 兼vscodeのdebugの構成作成
+兼pipenvのテスト
 """
 
 def main():
