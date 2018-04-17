@@ -11,6 +11,12 @@ def main():
     """main"""
     print("Hello world!")
     print("Good-bye cruel world!")
+    print("""Anything goes in. 
+Anything goes out! 
+Fish, bananas, old bananas, 
+Mutton! Beef! and Trout! 
+Anything goes in. 
+Anything goes out. """)
 
 
 if __name__ == '__main__':
