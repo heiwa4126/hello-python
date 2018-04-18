@@ -12,7 +12,8 @@ def main():
     """main"""
     print("Hello world!")
     print("Good-bye cruel world!")
-    print("""In olden days, a glimpse of stocking 
+    print((1, 2, 3, 4))
+    print("""In olden days, a glimpse of stocking
 Was looked on as something shocking.
 But now, God knows, Anything goes.
 Good authors too who once knew better words
