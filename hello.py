@@ -7,16 +7,18 @@ Pythonの動作テスト兼テンプレート
 兼pipenvのテスト
 """
 
+
 def main():
     """main"""
     print("Hello world!")
     print("Good-bye cruel world!")
-    print("""Anything goes in. 
-Anything goes out! 
-Fish, bananas, old bananas, 
-Mutton! Beef! and Trout! 
-Anything goes in. 
-Anything goes out. """)
+    print("""In olden days, a glimpse of stocking 
+Was looked on as something shocking.
+But now, God knows, Anything goes.
+Good authors too who once knew better words
+Now only use four-letter words 
+Writing prose.
+Anything goes. """)
 
 
 if __name__ == '__main__':
