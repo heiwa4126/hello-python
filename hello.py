@@ -20,6 +20,7 @@ Good authors too who once knew better words
 Now only use four-letter words 
 Writing prose.
 Anything goes. """)
+    print((5, 6, 7, 8))
 
 
 if __name__ == '__main__':
