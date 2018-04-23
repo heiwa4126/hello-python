@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # pylint: disable-msg=C0103, C0111
 """
 Pythonの動作テスト兼テンプレート

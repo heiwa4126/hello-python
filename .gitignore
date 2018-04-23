@@ -103,3 +103,6 @@ ENV/
 # backup files
 *~
 *.bak
+
+# remove .vscode/* tracking
+.vscode/
