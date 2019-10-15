@@ -99,3 +99,10 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# backup files
+*~
+*.bak
+
+# remove .vscode/* tracking
+.vscode/
