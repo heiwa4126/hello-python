@@ -2,11 +2,13 @@
 
 Just another useless repository for drill
 
-Python 練習用の意味のないレポジトリ
+Python 練習用の意味のないレポジトリ。
 
-Hatch を使っているので、
-プロジェクトをクローンしたら、
-ディレクトリに移動して、
+## 開発のしかた
+
+Hatch を使っているので、`pip install hatch`でインストール。
+
+次にプロジェクトをクローンして、ディレクトリに移動して、
 
 ```sh
 hatch run main

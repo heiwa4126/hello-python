@@ -1,13 +1,9 @@
 #!/usr/bin/env python3
 """
-Pythonの動作テスト兼テンプレート
-兼 vscode の debug の構成作成
+Python の動作テスト兼テンプレート
+兼 VScode の debug の構成作成
 兼 hatch のテスト
 """
-
-
-def test1():
-    pass
 
 
 def main() -> None:
