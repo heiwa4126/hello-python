@@ -1,13 +1,14 @@
-# hello-world
+# hello-python
 
 Just another useless repository for drill
 
-練習用の意味のないレポジトリ
+Python 練習用の意味のないレポジトリ
 
-pipenvを使っているので、
+Hatch を使っているので、
 プロジェクトをクローンしたら、
 ディレクトリに移動して、
+
+```sh
+hatch run main
+hatch test -a
 ```
-pipenv install --dev
-```
-で実行環境&開発環境がvirtualenvに導入されます。
