@@ -6,7 +6,7 @@ Python の動作テスト兼テンプレート
 """
 
 
-def main() -> None:
+def hello() -> None:
     """
     This is the main function of the program.
     It prints out various messages and tuples.
@@ -27,4 +27,4 @@ Anything goes. """
 
 
 if __name__ == "__main__":
-    main()
+    hello()

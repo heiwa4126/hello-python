@@ -2,6 +2,6 @@
 #
 # SPDX-License-Identifier: MIT
 
-from heiwa4126_hello_python import main
+from heiwa4126_hello_python.main import hello
 
-__all__ = ["main"]
+__all__ = ["hello"]

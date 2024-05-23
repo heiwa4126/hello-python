@@ -77,6 +77,7 @@ ignore = [ "T201" ]
 
 [tool.hatch.envs.default.scripts]
 main = "python src/heiwa4126_hello_python/main.py"
+ex1 = "python examples/ex1.py"
 
 [project.scripts]
-heiwa4126-hello-python = "heiwa4126_hello_python.main:main"
+heiwa4126-hello-python = "heiwa4126_hello_python:hello"

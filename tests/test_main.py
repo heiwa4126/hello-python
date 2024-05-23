@@ -1,8 +1,8 @@
-from heiwa4126_hello_python.main import main
+from heiwa4126_hello_python.main import hello
 
 
-def test_main(capsys):
-    main()
+def test_hello(capsys):
+    hello()
     captured = capsys.readouterr()
     assert (
         captured.out
