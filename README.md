@@ -19,6 +19,8 @@ pip install heiwa4126-hello-python
 
 ```sh
 heiwa4126-hello-python
+# or
+python -c "from heiwa4126_hello_python import hello; hello()"
 ```
 
 or
