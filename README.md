@@ -33,11 +33,24 @@ hello()
 
 ## 開発のしかた
 
-Hatch を使っているので、`pip install hatch` でインストール。
+Hatch を使っているので、`pip install hatch` でインストール。  
+もしくは Windows や Mac なら GUI のインストーラ使う (Python 不要)
 
-次にプロジェクトをクローンして、ディレクトリに移動して、
+[Installation - Hatch](https://hatch.pypa.io/latest/install/)
 
 ```sh
+# プロジェクトをクローンして
+git clone https://github.com/heiwa4126/hello-python.git
+# ディレクトリに移動して、
+cd hello-python
+# VSCodeで開く
+hatch run code .
+```
+
+で、
+
+```sh
+
 hatch run main
 # (update something)
 hatch fmt
