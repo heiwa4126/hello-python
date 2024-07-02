@@ -29,20 +29,13 @@ classifiers = [
 ]
 dependencies = [  ]
 
+[project.scripts]
+heiwa4126-hello-python = "heiwa4126_hello_python:hello"
+
 [project.urls]
 Documentation = "https://github.com/heiwa4126/hello-python#readme"
 Issues = "https://github.com/heiwa4126/hello-python/issues"
 Source = "https://github.com/heiwa4126/hello-python"
-
-[tool.hatch.version]
-path = "src/heiwa4126_hello_python/__about__.py"
-
-[tool.hatch.envs.types]
-extra-dependencies = [
-  "mypy>=1.0.0",
-]
-[tool.hatch.envs.types.scripts]
-check = "mypy --install-types --non-interactive {args:src/heiwa4126_hello_python tests}"
 
 [tool.coverage.run]
 source_pkgs = [
@@ -74,10 +67,3 @@ exclude_lines = [
 
 [tool.ruff.lint]
 ignore = [ "T201" ]
-
-[tool.hatch.envs.default.scripts]
-main = "python src/heiwa4126_hello_python/main.py"
-ex1 = "python examples/ex1.py"
-
-[project.scripts]
-heiwa4126-hello-python = "heiwa4126_hello_python:hello"
