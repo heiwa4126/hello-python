@@ -64,7 +64,7 @@ hatch run main
 hatch fmt
 hatch test -a
 hatch run bump
-hatch build
+rm -rf dist && hatch build
 hatch publish -r test
 hatch publish
 ```

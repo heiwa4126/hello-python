@@ -1,19 +1,11 @@
 #!/usr/bin/env python3
 
-import argparse
-
+from heiwa4126_hello_python.cli import parse_args
 from heiwa4126_hello_python.hello import hello
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "message",
-        nargs="?",
-        default="Python",
-        help="Your custom message (default: Python)",
-    )
-    args = parser.parse_args()
+    args = parse_args()
     hello(args.message)
 
 
