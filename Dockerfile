@@ -4,9 +4,15 @@ FROM python:3-alpine
 ENV PYTHONDONTWRITEBYTECODE=1
 
 ARG BDIST
+ARG USER=appuser
+ARG UID=1000
+ARG GID=1000
 
-COPY dist/${BDIST} /opt
-RUN pip3 install --no-cache-dir /opt/${BDIST} && rm /opt/${BDIST}
+RUN addgroup -g $GID $USER && adduser -D -u $UID -G $USER $USER
+
+COPY dist/${BDIST} /tmp
+RUN pip3 install --no-cache-dir /tmp/${BDIST} && rm /tmp/${BDIST}
 
 # マルチステージビルドにしてもwhlファイルの分しか減らない
+USER $USER
 CMD ["heiwa4126-hello-python"]
