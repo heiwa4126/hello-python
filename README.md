@@ -19,8 +19,15 @@ pip install heiwa4126-hello-python
 
 ```sh
 heiwa4126-hello-python
+heiwa4126-hello-python Dolly
+heiwa4126-hello-python -h
+# or
+python -m heiwa4126_hello_python
+python -m heiwa4126_hello_python "Mr. Monkey"
+python -m heiwa4126_hello_python -h
 # or
 python -c "from heiwa4126_hello_python import hello; hello()"
+python -c "from heiwa4126_hello_python import hello; hello('world')"
 ```
 
 or
@@ -29,6 +36,7 @@ or
 from heiwa4126_hello_python import hello
 
 hello()
+hello("goodbye")
 ```
 
 ## 開発のしかた

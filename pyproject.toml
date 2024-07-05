@@ -30,7 +30,7 @@ classifiers = [
 dependencies = [  ]
 
 [project.scripts]
-heiwa4126-hello-python = "heiwa4126_hello_python:hello"
+heiwa4126-hello-python = "heiwa4126_hello_python.__main__:main"
 
 [project.urls]
 Documentation = "https://github.com/heiwa4126/hello-python#readme"
