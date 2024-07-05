@@ -67,3 +67,24 @@ rm -rf dist && hatch build
 hatch publish -r test
 hatch publish
 ```
+
+### Docker
+
+```sh
+hatch run build-docker
+hatch run start-docker
+```
+
+サイズは
+
+```console
+$ hatch run list-docker
+
+REPOSITORY               TAG       IMAGE ID       CREATED                  SIZE
+heiwa4126-hello-python   0.2.1     4053e33e2384   Less than a second ago   57.9MB
+heiwa4126-hello-python   latest    4053e33e2384   Less than a second ago   57.9MB
+heiwa4126-hello-python   0.2.0     587873b24a9a   16 minutes ago           130MB
+```
+
+python:3-slim で 130MB、python:3-alpine で 57.9MB。
+マルチステージビルドはこのプロジェクトだとサイズがほぼ一緒。
