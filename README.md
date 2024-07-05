@@ -71,8 +71,12 @@ hatch publish
 ### Docker
 
 ```sh
+# ビルド
 hatch run build-docker
+# 実行
 hatch run start-docker
+## or
+docker run heiwa4126-hello-python heiwa4126-hello-python -h
 ```
 
 サイズは
