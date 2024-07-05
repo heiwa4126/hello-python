@@ -63,7 +63,7 @@ hatch run main
 # (update something)
 hatch fmt
 hatch test -a
-hatch version patch
+hatch run bump
 hatch build
 hatch publish -r test
 hatch publish
