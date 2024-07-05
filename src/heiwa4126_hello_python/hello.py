@@ -1,5 +1,9 @@
+import cowsay
+
+
 def hello(msg="Python") -> None:
     """
     greeting message
     """
-    print(f"Hello {msg}")
+    cowsay.cow(f"Hello {msg}")
+    # print(f"Hello {msg}")
