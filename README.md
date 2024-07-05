@@ -7,7 +7,7 @@
 
 Just another useless repository for drill.
 
-Python 練習用の意味のないレポジトリ。
+Python 練習用の意味のないレポジトリ。実態は `cowsay.cow(f"Hello {msg}")` だけ。
 
 ## Installation
 
@@ -58,7 +58,6 @@ hatch run code .
 で、
 
 ```sh
-
 hatch run main
 # (update something)
 hatch fmt
