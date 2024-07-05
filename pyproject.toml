@@ -27,7 +27,9 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   # "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = ["cowsay"]
+dependencies = [
+  "cowsay >= 6.1",
+]
 
 [project.scripts]
 heiwa4126-hello-python = "heiwa4126_hello_python.__main__:main"
