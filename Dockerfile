@@ -6,7 +6,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ARG BDIST
 
 COPY dist/${BDIST} /opt
-RUN pip3 install --no-cache-dir /opt/${BDIST}
+RUN pip3 install --no-cache-dir /opt/${BDIST} && rm /opt/${BDIST}
 
 # マルチステージビルドにしてもwhlファイルの分しか減らない
 CMD ["heiwa4126-hello-python"]

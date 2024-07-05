@@ -48,6 +48,8 @@ branch = true
 parallel = true
 omit = [
   "src/heiwa4126_hello_python/__about__.py",
+  "src/heiwa4126_hello_python/__main__.py",
+  "tests/*",
 ]
 
 [tool.coverage.paths]

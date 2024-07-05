@@ -41,9 +41,7 @@ hello("goodbye")
 
 ## 開発のしかた
 
-Hatch を使っているので、`pip install hatch` でインストール。  
-もしくは Windows や Mac なら GUI のインストーラ使う (Python 不要)
-
+Hatch を使っています。
 [Installation - Hatch](https://hatch.pypa.io/latest/install/)
 
 ```sh
@@ -59,9 +57,12 @@ hatch run code .
 
 ```sh
 hatch run main
-# (update something)
+hatch run main test
+hatch run main -h
+## update something...
 hatch fmt
-hatch test -a
+hatch test -ac
+## 発行
 hatch run bump
 rm -rf dist && hatch build
 hatch publish -r test
@@ -91,4 +92,4 @@ heiwa4126-hello-python   0.2.0     587873b24a9a   16 minutes ago           130MB
 ```
 
 python:3-slim で 130MB、python:3-alpine で 57.9MB。
-マルチステージビルドはこのプロジェクトだとサイズがほぼ一緒。
+マルチステージビルドはこのプロジェクトだとサイズがほぼ一緒なので止めました。
