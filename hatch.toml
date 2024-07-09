@@ -60,3 +60,10 @@ minor = [
 ]
 "list-docker" = "docker images $IMGNAME"
 "start-docker" = "docker run --rm $IMGNAME:latest"
+
+"trivy-check" = [
+  "trivy config .",
+  "trivy fs .",
+]
+
+"trivy-check-image" = "trivy image $IMGNAME:$(hatch version) --ignore-unfixed"
