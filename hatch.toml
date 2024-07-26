@@ -52,7 +52,7 @@ minor = [
 
 "build-docker" = [
   "hatch build",
-  """docker build . \\
+  """docker buildx build . \\
   --build-arg BDIST="$MODNAME-$(hatch version)-py3-none-any.whl" \\
   -t $IMGNAME:$(hatch version)""",
   "docker tag $IMGNAME:$(hatch version) $IMGNAME:latest",
