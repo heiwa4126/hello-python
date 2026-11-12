@@ -7,7 +7,7 @@ name = "heiwa4126-hello-python"
 version = "0.2.2"
 description = "An example python project"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 license = "MIT"
 keywords = [
   "demo",
