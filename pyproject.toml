@@ -1,5 +1,5 @@
 [build-system]
-requires = [ "hatchling" ]
+requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
@@ -9,35 +9,23 @@ description = "An example python project"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
-keywords = [
-  "demo",
-  "helloworld",
-]
-authors = [
-  { name = "heiwa4126", email = "heiwa4126@gmail.com" },
-]
+keywords = ["demo", "helloworld"]
+authors = [{ name = "heiwa4126", email = "heiwa4126@gmail.com" }]
 classifiers = [
-  # "Development Status :: 4 - Beta",
-  "Programming Language :: Python",
-  "Programming Language :: Python :: 3.8",
-  "Programming Language :: Python :: 3.9",
-  "Programming Language :: Python :: 3.10",
-  "Programming Language :: Python :: 3.11",
-  "Programming Language :: Python :: 3.12",
-  "Programming Language :: Python :: Implementation :: CPython",
-  # "Programming Language :: Python :: Implementation :: PyPy",
+	# "Development Status :: 4 - Beta",
+	"Programming Language :: Python",
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11",
+	"Programming Language :: Python :: 3.12",
+	"Programming Language :: Python :: Implementation :: CPython"
+	# "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = [
-  "cowsay >= 6.1",
-]
+dependencies = ["cowsay >= 6.1"]
 
 [dependency-groups]
-dev = [
-  "mypy",
-  "pytest",
-  "pytest-cov",
-  "ruff",
-]
+dev = ["mypy", "pytest", "pytest-cov", "ruff"]
 
 [project.scripts]
 heiwa4126-hello-python = "heiwa4126_hello_python.__main__:main"
@@ -48,37 +36,24 @@ Issues = "https://github.com/heiwa4126/hello-python/issues"
 Source = "https://github.com/heiwa4126/hello-python"
 
 [tool.coverage.run]
-source_pkgs = [
-  "heiwa4126_hello_python",
-  "tests",
-]
+source_pkgs = ["heiwa4126_hello_python", "tests"]
 branch = true
 parallel = true
-omit = [
-  "src/heiwa4126_hello_python/__main__.py",
-  "tests/*",
-]
+omit = ["src/heiwa4126_hello_python/__main__.py", "tests/*"]
 
 [tool.coverage.paths]
 heiwa4126_hello_python = [
-  "src/heiwa4126_hello_python",
-  "*/heiwa4126-hello-python/src/heiwa4126_hello_python",
+	"src/heiwa4126_hello_python",
+	"*/heiwa4126-hello-python/src/heiwa4126_hello_python"
 ]
-tests = [
-  "tests",
-  "*/heiwa4126-hello-python/tests",
-]
+tests = ["tests", "*/heiwa4126-hello-python/tests"]
 
 [tool.coverage.report]
-exclude_lines = [
-  "no cov",
-  "if __name__ == .__main__.:",
-  "if TYPE_CHECKING:",
-]
+exclude_lines = ["no cov", "if __name__ == .__main__.:", "if TYPE_CHECKING:"]
 
 [tool.ruff.lint]
-ignore = [ "T201" ]
+ignore = ["T201"]
 
 [[tool.mypy.overrides]]
-module = [ "cowsay" ]
+module = ["cowsay"]
 ignore_missing_imports = true
