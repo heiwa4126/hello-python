@@ -64,6 +64,7 @@ minor = [
 "trivy-check" = [
   "trivy config .",
   "trivy fs .",
+  "trivy fs --scanners license --severity HIGH,CRITICAL .",
 ]
 
 "trivy-check-image" = "trivy image $IMGNAME:$(hatch version) --ignore-unfixed"
