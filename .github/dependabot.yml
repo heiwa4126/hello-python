@@ -5,11 +5,15 @@
 
 version: 2
 updates:
-  - package-ecosystem: "pip" # See documentation for possible values
+  - package-ecosystem: uv # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "monthly"
-  - package-ecosystem: "docker"
+      interval: monthly
+    cooldown:
+      default-days: 7
+  - package-ecosystem: docker
     directory: "/"
     schedule:
-      interval: "monthly"
+      interval: monthly
+    cooldown:
+      default-days: 7
