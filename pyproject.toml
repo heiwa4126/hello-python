@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "heiwa4126-hello-python"
-dynamic = [ "version" ]
+version = "0.2.2"
 description = "An example python project"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -31,6 +31,14 @@ dependencies = [
   "cowsay >= 6.1",
 ]
 
+[dependency-groups]
+dev = [
+  "mypy",
+  "pytest",
+  "pytest-cov",
+  "ruff",
+]
+
 [project.scripts]
 heiwa4126-hello-python = "heiwa4126_hello_python.__main__:main"
 
@@ -47,7 +55,6 @@ source_pkgs = [
 branch = true
 parallel = true
 omit = [
-  "src/heiwa4126_hello_python/__about__.py",
   "src/heiwa4126_hello_python/__main__.py",
   "tests/*",
 ]
@@ -71,3 +78,7 @@ exclude_lines = [
 
 [tool.ruff.lint]
 ignore = [ "T201" ]
+
+[[tool.mypy.overrides]]
+module = [ "cowsay" ]
+ignore_missing_imports = true
